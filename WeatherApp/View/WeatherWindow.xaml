@@ -41,6 +41,12 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <StackPanel  Orientation="Horizontal">
+                <Label FontWeight="Bold">Temperature Scale</Label>
+                <RadioButton Margin  ="10 0 10 0" IsChecked="True" VerticalAlignment="Center">Celsius</RadioButton>
+                <RadioButton Margin  ="0 0 10 0" VerticalAlignment="Center">Fahrenheit</RadioButton>
+                
+            </StackPanel>
             <ListView Margin="0 30 0 0"
                       ItemsSource="{Binding Forecasts}">
                 <ListView.ItemTemplate>
